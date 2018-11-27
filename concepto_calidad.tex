@@ -1,0 +1,269 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt, spanish]{beamer}
+
+
+\mode<presentation> {
+	
+	% The Beamer class comes with a number of default slide themes
+	% which change the colors and layouts of slides. Below this is a list
+	% of all the themes, uncomment each in turn to see what they look like.
+	
+	%\usetheme{default}
+	%\usetheme{AnnArbor}
+	%\usetheme{Antibes}
+	%\usetheme{Bergen}
+	%\usetheme{Berkeley}
+	%\usetheme{Berlin}
+	%\usetheme{Boadilla}
+	%\usetheme{CambridgeUS}
+	%\usetheme{Copenhagen}
+	%\usetheme{Darmstadt}
+	%\usetheme{Dresden}
+	%\usetheme{Frankfurt}
+	%\usetheme{Goettingen}
+	%\usetheme{Hannover}
+	%\usetheme{Ilmenau}
+	%\usetheme{JuanLesPins}
+	%\usetheme{Luebeck}
+	%\usetheme{Madrid}
+	%\usetheme{Malmoe}
+	%\usetheme{Marburg}
+	%\usetheme{Montpellier}
+	%\usetheme{PaloAlto}
+	%\usetheme{Pittsburgh}
+	\usetheme{Rochester}
+	%\usetheme{Singapore}
+	%\usetheme{Szeged}
+	%\usetheme{Warsaw}
+	
+	% As well as themes, the Beamer class has a number of color themes
+	% for any slide theme. Uncomment each of these in turn to see how it
+	% changes the colors of your current slide theme.
+	
+	%\usecolortheme{albatross}
+	%\usecolortheme{beaver}
+	%\usecolortheme{beetle}
+	%\usecolortheme{crane}
+	%\usecolortheme{dolphin}
+	%\usecolortheme{dove}
+	%\usecolortheme{fly}
+	%\usecolortheme{lily}
+	%\usecolortheme{orchid}
+	%\usecolortheme{rose}
+	%\usecolortheme{seagull}
+	%\usecolortheme{seahorse}
+	%\usecolortheme{whale}
+	%\usecolortheme{wolverine}
+	
+	%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+	%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+	
+	%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\AtBeginSection[]{
+	\begin{frame}
+		\vfill
+		\centering
+		
+		\usebeamerfont{title}\insertsectionhead\par%
+		
+		\vfill
+	\end{frame}
+}
+
+\AtBeginSubsection[]{
+	\begin{frame}
+		\vfill
+		\centering
+		
+		\usebeamerfont{title}\insertsubsectionhead\par%
+		
+		\vfill
+	\end{frame}
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage[latin9]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{svg}
+\usepackage{caption}
+\usepackage{minted}
+\captionsetup{font=scriptsize,labelfont=scriptsize}
+\setbeamerfont{footnote}{size=\tiny}
+\hypersetup{colorlinks=true,linkcolor=blue, linktocpage}
+\graphicspath{ {./img/} }
+\svgpath{ {./img/} }
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Short title]{Sistemas de gestión de la calidad: conceptos e ISO 9001)} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Miguel Expósito Martín} % Your name
+\institute[UNICAN] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+	Universidad de Cantabria \\ % Your institution for the title page
+	\medskip
+	\textit{miguel.exposito@unican.es} % Your email address
+}
+\date{10/12/2018} % Date, can be changed to a custom date
+
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}%
+	\hspace{1em}%
+	\insertframenumber/\inserttotalframenumber
+}
+
+\begin{document}
+	
+	\begin{frame}
+		\titlepage % Print the title page as the first slide
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Visión general} % Table of contents slide, comment this block out to remove it
+		\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+	\end{frame}
+	
+	%----------------------------------------------------------------------------------------
+	%	PRESENTATION SLIDES
+	%----------------------------------------------------------------------------------------
+	
+	%------------------------------------------------
+	\section{Definición} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+	%------------------------------------------------
+	
+	
+	\begin{frame}
+		\frametitle{Definición de calidad}
+	La calidad se ha convertido en uno de los principales objetivos estratégicos para las organizaciones, dado que su supervivencia cada vez depende más de la calidad de sus productos y servicios. Según el DRAE, la calidad es:
+	\begin{enumerate}
+		\item \textit{f. Propiedad o conjunto de propiedades inherentes a algo, que permiten juzgar su valor. Esta tela es de buena calidad}.
+		\item\textit{ f. Buena calidad, superioridad o excelencia. La calidad de ese aceite ha conquistado los mercados.}
+		\item \textit{f. Adecuación de un producto o servicio a las características especificadas. Control de la calidad de un producto.}
+		\item\textit{ f. Carácter, genio, índole.}
+	    \item \textit{f. Condición o requisito que se pone en un contrato.}
+	\end{enumerate}
+	
+		
+	\end{frame}
+
+	\begin{frame}
+	\frametitle{Definiciones históricas}
+	\begin{table}
+	\begin{tabular}{|p{1.6cm}|p{1cm}|p{7.5cm}|}
+		\toprule
+		\textbf{Autor} & \textbf{Año} & \textbf{Definición}\\
+		\midrule
+		Shewhart & 1931	& Existe un lado subjetivo de la calidad, que tiene que ver con lo que pensamos, sentimos o creemos como resultado de la realidad objetiva.	 \\
+		Crosby 	& 1979 & Conformidad con los requisitos.	 \\
+		Taguchi & 1979 & Pérdida que un producto causa a la sociedad después de ser entregado.  \\
+		Feigenbaum	& 1983 & Características totales por medio de las cuales el producto y servicio en uso cumplirá las expectativas del cliente.  \\
+		Ishikawa & 1985	& Énfasis en la orientación al cliente. \\
+		Deming & 1986 & Traducir necesidades futuras del usuario en características medibles para dar satisfacción al usuario.  \\
+		Juran & 1988 & Calidad como adecuación al uso. \\
+
+		\bottomrule
+	\end{tabular}
+	\caption{Privilegios más comunes}
+\end{table}
+\end{frame}
+
+	\begin{frame}
+	\frametitle{Vistas de la calidad (Garbin, 1984)}
+\begin{itemize}
+ \item \textbf{Vista trascendental}: la calidad es algo que se reconoce pero no se define: un ideal al que se intenta llegar.
+ \item \textbf{Vista del usuario}: la calidad es adecuación al propósito. Las características de los productos se pueden cuantivicar.
+ \item \textbf{Vista del fabricante}: la calidad es conformidad con las especificaciones. Vista centrada en el proceso.
+ \item \textbf{Vista del producto}: la calidad está unida a las características inherentes del producto.
+ \item \textbf{Vista basada en valor}: la calidad depende de la cantidad que el cliente esté dispuesto a pagar.
+\end{itemize}
+	
+\end{frame}
+
+\section{Conceptos relacionados con la calidad}
+
+	\begin{frame}
+	\frametitle{Conceptos relacionados con gestión de calidad (ISO 9000)}
+	\begin{itemize}
+		\item \textbf{Política de la calidad}: intenciones y dirección de una organización relativas a la calidad como las expresa su alta dirección.
+		\item \textbf{Objetivo de la calidad}: resultado a lograr en cuanto a calidad.
+		\item \textbf{Sistema de gestión de la calidad}: sistema para dirigir y controlar una organización con respecto a la calidad.
+		\item \textbf{Planificación de la calidad}: establecimiento de objetivos y especificación de procesos y recursos necesarios para cumplir con los objetivos de la calidad.
+		\item \textbf{Control de la calidad}: orientada al cumplimiento de requisitos de calidad.
+		\item \textbf{Aseguramiento de la calidad}: orientada a proporcionar confianza en que se cumplirán los requisitos de la calidad.
+		\item \textbf{Mejora de la calidad}: orientada a aumentar la capacidad para cumplir con los requisitos de la calidad.
+	\end{itemize}
+	
+\end{frame}
+
+	\begin{frame}
+	\frametitle{Conceptos relacionados con aceptación de producto o servicio (ISO 9000)}
+	\begin{itemize}
+		\item \textbf{Conformidad}: cumplimiento de un requisito.
+		\item \textbf{No conformidad}: incumplimiento de un requisito.
+		\item \textbf{Defecto}: no conformidad relativa a un uso previsto o especificado.
+		\item \textbf{Acción preventiva}: tomada para eliminar la causa de una no conformidad potencial.
+		\item \textbf{Acción correctiva}: tomada para eliminar la causa de una no conformidad y prevenir su ocurrencia.
+		\item \textbf{Corrección}: acción tomada para eliminar una no conformidad detectada.
+		\item \textbf{Reparación}: acción tomada sobre un producto no conforme para convertirlo en aceptable para su utilización prevista.
+		\item \textbf{Desecho}: acción tomada sobre un producto no conforme para impedir su uso inicialmente previsto.
+	\end{itemize}
+	
+\end{frame}
+
+	\begin{frame}
+	\frametitle{Conceptos relacionados con la documentación de la calidad}
+	\begin{itemize}
+		\item \textbf{Manuales de la calidad}: proporcionan información coherente sobre el sistema de gestión de la calidad de la organización.
+		\item \textbf{Planes de la calidad}: describen cómo se aplica el sistema de gestión de la calidad a un producto o proyecto.
+		\item \textbf{Especificaciones}: establecen requisitos.
+		\item \textbf{Guías}: establecen recomendaciones o sugerencias.
+		\item \textbf{Procedimientos documentados}: instrucciones de trabajo y documentos que proporcionan información sobre cómo efectuar las actividades y procesos de forma coherente.
+		\item \textbf{Registros}: documentos que proporcionan evidencia objetiva de las actividades realizadas o resultados obtenidos.
+	
+	\end{itemize}
+	
+\end{frame}
+	
+
+	%------------------------------------------------
+	
+	\begin{frame}
+		\frametitle{Referencias}
+		\footnotesize{
+			\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+				\bibitem[Piattini, 2008]{p1} Mario Piattini Velthuis et al. (2008)
+				\newblock Auditoría de Tecnologías y Sistemas de Información.
+			\end{thebibliography}
+		}
+	\end{frame}
+	
+	
+	
+	%------------------------------------------------
+	
+	
+	%----------------------------------------------------------------------------------------
+	
+\end{document}
